@@ -1,18 +1,30 @@
 <div class="container">
     <div class="formulario">
-        <form>
+        <form #calc="ngForm" (ngSubmit)="calcularResultado()">
             <h1>Calculamentos</h1>
             <label for="n1">Número 01</label>
-            <input type="number" name="n1" id="n1"/>
+            <input type="number" name="n1" id="n1" [(ngModel)]="num1"/>
 
             <label for="n2">Número 02</label>
-            <input type="number" name="n2" id="n2"/>
+            <input type="number" name="n2" id="n2" [(ngModel)]="num2"/>
+
+            <label for="n3">Número 03</label>
+            <input type="number" name="n3" id="n3" [(ngModel)]="num3"/>
+
+            <label for="n4">Número 04</label>
+            <input type="number" name="n4" id="n4" [(ngModel)]="num4"/>
 
             <button type="submit">Somar</button>
         </form>
 
-        <div class="resultadisplay">
-            <p>Resultado: <span id="resultado"></span></p>
+        <div class="resultadisplay" *ngIf="resultado">
+            <p>Se der tudo certo, isso aparece c a submissão</p>
         </div>
+
+        @if(resultado) {
+            <div class="resultadisplay">
+                <p>Resultado: <span id="resultado"> {{ resultado }} </span></p>
+            </div>
+        }
     </div>
 </div>
