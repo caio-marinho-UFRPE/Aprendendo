@@ -14,7 +14,7 @@ type tipoA int
 
 var x03 tipoA
 
-func ex04() {
+func exC304() {
 	fmt.Printf("X é uma variável de tipo: %T, de valor %v\n", x03, x03)
 
 	x03 = 42

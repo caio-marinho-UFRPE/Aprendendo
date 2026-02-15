@@ -18,7 +18,7 @@ var x00 int
 var y00 string
 var z00 bool
 
-func ex02() {
+func exC302() {
 	fmt.Println("O valor contido em x é:", x00)
 	fmt.Println("O valor contido em y é:", y00)
 	fmt.Println("O valor contido em x é:", z00)

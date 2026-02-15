@@ -17,7 +17,7 @@ var x01 int = 42
 var y01 string = "James Bond"
 var z01 bool = true
 
-func ex03() {
+func exC303() {
 	s03 := fmt.Sprintf("%v %v %v", x01, y01, z01)
 
 	fmt.Printf("\nO valor de s é: %v", s03)

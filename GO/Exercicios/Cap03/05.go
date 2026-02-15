@@ -23,7 +23,7 @@ var x04 tipoB
 
 var y03 int
 
-func main() {
+func exC305() {
 	fmt.Printf("X é uma variável de tipo: %T, de valor %v\n", x04, x04)
 
 	x04 = 42
